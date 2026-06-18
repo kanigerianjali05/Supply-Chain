@@ -1,0 +1,254 @@
+.route-optimization {
+  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.optimization-header {
+  margin-bottom: 30px;
+}
+
+.optimization-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.optimization-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.optimization-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.metric-card {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s;
+}
+
+.metric-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.metric-icon {
+  font-size: 32px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.metric-info {
+  flex: 1;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.metric-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.routes-recommendations {
+  margin-bottom: 30px;
+}
+
+.routes-recommendations h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recommendation-card {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--card-shadow);
+}
+
+.recommendation-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.route-info {
+  margin-bottom: 15px;
+}
+
+.route-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.route-distance {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.optimization-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-item {
+  text-align: center;
+}
+
+.data-label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.data-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.data-value.gain {
+  color: var(--success);
+}
+
+.route-suggestions {
+  animation: slideDown 0.2s ease;
+  margin-top: 15px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.route-suggestions h4 {
+  font-size: 13px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.route-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.route-suggestions li {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.route-suggestions li:last-child {
+  border-bottom: none;
+}
+
+.suggestion-details {
+  background: rgba(255, 152, 0, 0.05);
+  border: 1px solid rgba(255, 152, 0, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-item span {
+  color: var(--text-secondary);
+}
+
+.detail-item strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.optimization-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.action-button {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border-color);
+  font-size: 13px;
+}
+
+.action-button.primary {
+  background: var(--primary-color);
+  color: #000;
+  border-color: var(--primary-color);
+}
+
+.action-button.primary:hover {
+  background: #FB8500;
+  transform: scale(1.02);
+}
+
+.action-button.secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.action-button.secondary:hover {
+  background: rgba(255, 152, 0, 0.1);
+}

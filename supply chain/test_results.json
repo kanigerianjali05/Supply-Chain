@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "total_tests": 4,
+    "high_risk": 1,
+    "medium_risk": 0,
+    "low_risk": 3,
+    "avg_delay_probability": 25.0
+  },
+  "predictions": [
+    {
+      "name": "Express Shipment - Consumer, Standard Class",
+      "delay_probability": 0.0,
+      "confidence": 100.0,
+      "risk_level": "Low"
+    },
+    {
+      "name": "Standard Shipment - Corporate, First Class",
+      "delay_probability": 0.0,
+      "confidence": 100.0,
+      "risk_level": "Low"
+    },
+    {
+      "name": "Bulk Order - Home Office, Second Class",
+      "delay_probability": 100.0,
+      "confidence": 100.0,
+      "risk_level": "High"
+    },
+    {
+      "name": "Same-Day Delivery - Consumer, Discounted",
+      "delay_probability": 0.0,
+      "confidence": 100.0,
+      "risk_level": "Low"
+    }
+  ],
+  "model_insights": {
+    "is_trained": true,
+    "shipping_mode_delays": {},
+    "market_delays": {},
+    "customer_segment_delays": {}
+  }
+}

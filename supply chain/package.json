@@ -1,0 +1,16 @@
+{
+  "name": "supply-chain-control-tower",
+  "displayName": "AI Supply Chain Control Tower",
+  "version": "1.0.0",
+  "description": "AI-powered supply chain control tower with ML models for demand forecasting, supplier risk analysis, and route optimization. Features real-time monitoring, historical data analysis, and interactive dashboards.",
+  "main": "backend/app.py",
+  "license": "MIT",
+  "author": "Your Name",
+  "scripts": {
+    "frontend-install": "cd frontend && npm install",
+    "backend-install": "pip install -r backend/requirements.txt",
+    "frontend-start": "cd frontend && npm start",
+    "backend-start": "cd backend && python app.py",
+    "build": "cd frontend && npm run build"
+  }
+}
