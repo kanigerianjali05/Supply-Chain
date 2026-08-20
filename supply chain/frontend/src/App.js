@@ -44,7 +44,7 @@ function App() {
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       <main className="main-content">
         <header className="header">
-          <h1>AI Supply Chain Control Tower</h1>
+          <h1>AI Supply Chain Control Tower System</h1>
           <div className="header-right">
             <span className="date">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' })}</span>
             <button className="settings-btn">⚙️</button>
